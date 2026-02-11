@@ -41,12 +41,17 @@ export function HeroSection() {
       <div className="overflow-hidden py-16 px-6 sm:py-24 max-w-5xl z-5">
         <div className="grid gap-12 md:grid-cols-[minmax(0,2fr)_minmax(0,1.2fr)]">
           <div className="space-y-6">
-            <p className="text-xs font-medium uppercase tracking-[0.2em] text-neutral-400">
-              Hi, I am Mohmed
+            <p className="text-xl font-medium uppercase tracking-[0.2em] text-neutral-400">
+              Hi, I am Mohamed
             </p>
             <div className="space-y-2 text-4xl font-semibold leading-tight tracking-tight sm:text-5xl md:text-6xl">
               <h1 className="text-neutral-200">I uncover</h1>
-              <h1 className="text-neutral-50">Insights from Data</h1>
+              <h1 className="text-neutral-50">
+                Insights from{" "}
+                <span className="bg-linear-to-r from-sky-400 via-violet-400 to-pink-400 bg-clip-text text-transparent">
+                  Data
+                </span>
+              </h1>
               <h1 className="text-neutral-200">that drive</h1>
               <h1 className="bg-linear-to-r from-sky-400 via-violet-400 to-pink-400 bg-clip-text text-transparent">
                 Meaningful Outcomes
