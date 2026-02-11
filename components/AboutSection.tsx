@@ -1,74 +1,123 @@
+import { LuUser, LuBriefcase, LuGraduationCap } from "react-icons/lu";
+
 export function AboutSection() {
   return (
     <section id="about" className="max-w-5xl mx-auto">
       <div className="mt-24 grid gap-10 md:grid-cols-[minmax(0,1.5fr)_minmax(0,1.4fr)] fade-in-up">
         <div className="space-y-4">
-          <p className="text-xs font-medium uppercase tracking-[0.25em] text-neutral-400">
+          <p className="flex items-center gap-2 text-xs font-medium uppercase tracking-[0.25em] text-neutral-400">
+            <LuUser className="size-4" />
             About Me
           </p>
           <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
             A bit about who I am and how I work.
           </h2>
           <p className="text-sm text-neutral-300 sm:text-base">
-            I&apos;m a product-focused designer and developer who cares deeply
-            about clarity, usability, and creating interfaces that feel
-            effortless to use. I enjoy collaborating closely with teams, turning
-            messy problems into simple, thoughtful experiences.
+            I&apos;m a Data Analyst passionate about uncovering insights from
+            data to drive meaningful outcomes. Before focusing on data analysis,
+            I gained hands-on experience in cybersecurity, which gave me a strong
+            foundation in understanding risks, data protection, and system
+            security.
           </p>
           <p className="text-sm text-neutral-300 sm:text-base">
-            Outside of work, I&apos;m usually learning something new,
-            experimenting with side projects, or exploring ideas that sit at the
-            intersection of design, code, and AI.
+            Now I bring that unique blend of analytical skills and security
+            awareness to my work, helping organizations make smarter, safer, and
+            more informed decisions.
           </p>
         </div>
 
         <div className="space-y-6">
           <div className="space-y-3">
-            <p className="text-xs font-medium uppercase tracking-[0.25em] text-neutral-400">
+            <p className="flex items-center gap-2 text-xs font-medium uppercase tracking-[0.25em] text-neutral-400">
+              <LuBriefcase className="size-4" />
               Experience
             </p>
             <div className="space-y-4 rounded-2xl border border-white/10 bg-black/40 p-4">
               <div className="flex items-start justify-between gap-3">
                 <div>
                   <p className="text-sm font-semibold text-neutral-50">
-                    Product Designer / Developer
+                    Microsoft Power BI Specialist Intern
                   </p>
-                  <p className="text-xs text-neutral-400">Company Name</p>
+                  <p className="text-xs text-neutral-400">
+                    Digital Egypt Pioneers Initiative
+                  </p>
                 </div>
-                <p className="text-xs text-neutral-500">2023 — Present</p>
+                <p className="text-xs text-neutral-500">Present</p>
               </div>
               <p className="text-xs text-neutral-300">
-                Working across product, design, and front-end implementation to
-                ship usable, outcome-driven experiences.
+                Selected for a competitive national program in data analytics and
+                business intelligence. Developing advanced skills in data
+                modeling, visualization, and building interactive dashboards with
+                Microsoft Power BI.
               </p>
             </div>
             <div className="space-y-4 rounded-2xl border border-white/10 bg-black/40 p-4">
               <div className="flex items-start justify-between gap-3">
                 <div>
                   <p className="text-sm font-semibold text-neutral-50">
-                    Previous Role
+                    Data Analytics Intern
                   </p>
-                  <p className="text-xs text-neutral-400">Another Company</p>
+                  <p className="text-xs text-neutral-400">
+                    Instant & Orange Digital Center
+                  </p>
                 </div>
-                <p className="text-xs text-neutral-500">2021 — 2023</p>
+                <p className="text-xs text-neutral-500">Jan — Feb 2026</p>
               </div>
               <p className="text-xs text-neutral-300">
-                Contributed to designing and improving digital products with a
-                focus on user needs and business impact.
+                Hands-on internship with datasets for cleaning, analysis, and
+                visualization. Used SQL, Python, and Power BI to extract insights
+                and build dashboards for data-driven decision making.
+              </p>
+            </div>
+            <div className="space-y-4 rounded-2xl border border-white/10 bg-black/40 p-4">
+              <div className="flex items-start justify-between gap-3">
+                <div>
+                  <p className="text-sm font-semibold text-neutral-50">
+                    Data Analytics Intern
+                  </p>
+                  <p className="text-xs text-neutral-400">
+                    NTI (National Telecommunication Institute)
+                  </p>
+                </div>
+                <p className="text-xs text-neutral-500">Aug — Sept 2025</p>
+              </div>
+              <p className="text-xs text-neutral-300">
+                Intensive training in Python, SQL, and Power BI. Applied
+                statistical methods for business insights and gained practical
+                experience in data visualization and reporting.
+              </p>
+            </div>
+            <div className="space-y-4 rounded-2xl border border-white/10 bg-black/40 p-4">
+              <div className="flex items-start justify-between gap-3">
+                <div>
+                  <p className="text-sm font-semibold text-neutral-50">
+                    Cybersecurity Member
+                  </p>
+                  <p className="text-xs text-neutral-400">
+                    Microsoft Student Club — AOU
+                  </p>
+                </div>
+                <p className="text-xs text-neutral-500">Aug 2024 — July 2025</p>
+              </div>
+              <p className="text-xs text-neutral-300">
+                Active cybersecurity team member. Participated in awareness
+                campaigns, hands-on labs, and security challenges. Promoted
+                secure digital practices across the community.
               </p>
             </div>
           </div>
 
           <div className="space-y-3">
-            <p className="text-xs font-medium uppercase tracking-[0.25em] text-neutral-400">
+            <p className="flex items-center gap-2 text-xs font-medium uppercase tracking-[0.25em] text-neutral-400">
+              <LuGraduationCap className="size-4" />
               Education
             </p>
             <div className="space-y-2 rounded-2xl border border-white/10 bg-black/40 p-4">
               <p className="text-sm font-semibold text-neutral-50">
-                Your Degree / Program
+                Undergraduate — Computer Science
               </p>
-              <p className="text-xs text-neutral-400">Your University</p>
-              <p className="text-xs text-neutral-500">Years attended</p>
+              <p className="text-xs text-neutral-400">Arab Open University</p>
+              <p className="text-xs text-neutral-500">2023 — Present</p>
             </div>
           </div>
         </div>

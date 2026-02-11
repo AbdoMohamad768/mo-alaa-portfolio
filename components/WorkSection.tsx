@@ -1,36 +1,39 @@
+import { AiOutlineBarChart, AiOutlinePieChart } from "react-icons/ai";
+import { LuFolderKanban } from "react-icons/lu";
+
 const workItems = [
   {
-    type: "App & Web",
-    year: "2024",
-    title: "Improving onboarding for higher conversions",
+    type: "Business Intelligence",
+    year: "Present",
+    title: "Power BI dashboards & data modeling",
     description:
-      "Redesigned the signup and first-session experience to reduce friction and increase activation.",
-    metricLabelLeft: "Signup completion",
-    metricValueLeft: "Up by 42%",
-    metricLabelRight: "Time to value",
-    metricValueRight: "Down by 35%",
+      "Developing advanced skills in data modeling and visualization as a Microsoft Power BI Specialist Intern at Digital Egypt Pioneers Initiative—a competitive national program in data analytics.",
+    metricLabelLeft: "Focus",
+    metricValueLeft: "Power BI & BI",
+    metricLabelRight: "Scope",
+    metricValueRight: "National program",
   },
   {
-    type: "Product Design",
-    year: "2023",
-    title: "Turning one-off users into returning customers",
+    type: "Data Analytics",
+    year: "2026",
+    title: "Data cleaning, analysis & visualization",
     description:
-      "Created a membership model and dashboard that keeps users engaged and coming back.",
-    metricLabelLeft: "Returning users",
-    metricValueLeft: "+32%",
-    metricLabelRight: "Average session time",
-    metricValueRight: "+18%",
+      "Hands-on internship at Instant & Orange Digital Center. Worked with datasets for cleaning, analysis, and visualization using SQL, Python, and Power BI to support data-driven decision making.",
+    metricLabelLeft: "Tools",
+    metricValueLeft: "SQL, Python, Power BI",
+    metricLabelRight: "Outcome",
+    metricValueRight: "Interactive dashboards",
   },
   {
-    type: "Web Experience",
-    year: "2023",
-    title: "A clean marketing site for a SaaS launch",
+    type: "Data Analytics",
+    year: "2025",
+    title: "Statistical analysis & reporting",
     description:
-      "End-to-end design and build of a responsive marketing site focused on clarity and storytelling.",
-    metricLabelLeft: "Launch timeline",
-    metricValueLeft: "Shipped in 3 weeks",
-    metricLabelRight: "Bounce rate",
-    metricValueRight: "-27%",
+      "Intensive training at NTI (National Telecommunication Institute). Learned Python, SQL, and Power BI. Applied statistical methods to generate business insights and build data visualizations.",
+    metricLabelLeft: "Focus",
+    metricValueLeft: "Statistical methods",
+    metricLabelRight: "Skills",
+    metricValueRight: "Python, SQL, Power BI",
   },
 ];
 
@@ -40,16 +43,17 @@ export function WorkSection() {
       <div className="mt-24 space-y-8 fade-in-up">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <p className="text-xs font-medium uppercase tracking-[0.25em] text-neutral-400">
+            <p className="flex items-center gap-2 text-xs font-medium uppercase tracking-[0.25em] text-neutral-400">
+              <LuFolderKanban className="size-4" />
               Featured Work
             </p>
             <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-              Some of my recent case studies
+              Data analytics & business intelligence
             </h2>
           </div>
           <p className="max-w-sm text-xs text-neutral-400 sm:text-sm">
-            A selection of product and interface work focused on clear outcomes,
-            measurable impact, and thoughtful execution.
+            Internships and projects in data analysis, visualization, and
+            BI—helping organizations turn data into actionable insights.
           </p>
         </div>
 
@@ -60,7 +64,12 @@ export function WorkSection() {
               className="fade-in-up rounded-2xl border border-white/10 bg-white/5 p-5 sm:p-6"
             >
               <div className="flex flex-wrap items-center gap-3 text-xs text-neutral-400">
-                <span className="rounded-full border border-white/10 bg-black/40 px-3 py-1 text-[11px] uppercase tracking-[0.18em]">
+                <span className="flex items-center gap-1.5 rounded-full border border-white/10 bg-black/40 px-3 py-1 text-[11px] uppercase tracking-[0.18em]">
+                  {item.type === "Business Intelligence" ? (
+                    <AiOutlinePieChart className="size-3.5" />
+                  ) : (
+                    <AiOutlineBarChart className="size-3.5" />
+                  )}
                   {item.type}
                 </span>
                 <span>{item.year}</span>

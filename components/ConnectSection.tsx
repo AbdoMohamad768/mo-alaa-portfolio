@@ -1,27 +1,34 @@
-import { LuGithub, LuMail } from "react-icons/lu";
+import {
+  LuLinkedin,
+  LuMail,
+  LuMessageCircle,
+  LuMessageSquare,
+  LuUser,
+} from "react-icons/lu";
 
 export function ConnectSection() {
   return (
     <section id="connect" className="max-w-5xl mx-auto">
       <div className="mt-24 space-y-6 rounded-3xl border border-white/10 bg-white/5 p-6 sm:p-8 fade-in-up">
-        <p className="text-xs font-medium uppercase tracking-[0.25em] text-neutral-400">
+        <p className="flex items-center gap-2 text-xs font-medium uppercase tracking-[0.25em] text-neutral-400">
+          <LuMessageCircle className="size-4" />
           Let&apos;s build something together
         </p>
         <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-          Open to collaborating on thoughtful, impact-driven products.
+          Open to data analysis and analytics roles.
         </h2>
         <p className="max-w-xl text-sm text-neutral-400 sm:text-base">
-          Whether you&apos;re looking to refine an existing experience or build
-          something new from scratch, I&apos;d love to hear about what
-          you&apos;re working on.
+          Whether you need dashboards, data insights, or analytics support, I&apos;d
+          love to hear about your projects and how we can work together.
         </p>
 
         <form className="mt-6 grid gap-4 sm:grid-cols-2">
           <div className="sm:col-span-1">
             <label
               htmlFor="contact-name"
-              className="mb-1 block text-xs font-medium text-neutral-300"
+              className="mb-1 flex items-center gap-1.5 text-xs font-medium text-neutral-300"
             >
+              <LuUser className="size-3.5" />
               Name
             </label>
             <input
@@ -34,8 +41,9 @@ export function ConnectSection() {
           <div className="sm:col-span-1">
             <label
               htmlFor="contact-email"
-              className="mb-1 block text-xs font-medium text-neutral-300"
+              className="mb-1 flex items-center gap-1.5 text-xs font-medium text-neutral-300"
             >
+              <LuMail className="size-3.5" />
               Email
             </label>
             <input
@@ -48,8 +56,9 @@ export function ConnectSection() {
           <div className="sm:col-span-2">
             <label
               htmlFor="contact-message"
-              className="mb-1 block text-xs font-medium text-neutral-300"
+              className="mb-1 flex items-center gap-1.5 text-xs font-medium text-neutral-300"
             >
+              <LuMessageSquare className="size-3.5" />
               Message
             </label>
             <textarea
@@ -61,7 +70,7 @@ export function ConnectSection() {
           </div>
           <div className="flex flex-wrap gap-3 pt-2">
             <a
-              href="mailto:abdomohmed768@email.com"
+              href="mailto:mohmedhefzi1@gmail.com"
               className="inline-flex items-center justify-center gap-1 rounded-full hover:bg-gray-800 hover:text-emerald-300 bg-neutral-50 px-5 py-2.5 text-sm font-medium text-black transition"
             >
               <p>
@@ -70,13 +79,13 @@ export function ConnectSection() {
               <p>Email me</p>
             </a>
             <a
-              href="https://www.linkedin.com/in/your-handle"
+              href="https://www.linkedin.com/in/mo-alaa14"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center justify-center gap-1 rounded-full border border-white/20 bg-black/40 px-5 py-2.5 text-sm font-medium text-neutral-100 transition hover:border-white hover:text-white"
             >
               <p>
-                <LuGithub className="size-5" />
+                <LuLinkedin className="size-4" />
               </p>
               <p>Connect on LinkedIn</p>
             </a>
