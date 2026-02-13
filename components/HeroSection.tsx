@@ -20,16 +20,6 @@ const SKILL_ICONS: Record<
   "Business Intelligence": AiOutlineLineChart,
 };
 
-const skills = [
-  "Data Analysis",
-  "Python",
-  "SQL",
-  "Power BI",
-  "Data Visualization",
-  "EDA",
-  "Business Intelligence",
-];
-
 export function HeroSection() {
   return (
     <section
@@ -66,7 +56,7 @@ export function HeroSection() {
           </div>
 
           <div className="group flex items-center justify-center">
-            <div className="relative aspect-4/5 w-full max-w-xs overflow-hidden rounded-3xl border border-white/15 bg-black/30 shadow-[0_0_0_rgba(56,189,248,0)] backdrop-blur-md transition-all duration-500 sm:max-w-sm md:max-w-md group-hover:-translate-y-1 group-hover:border-sky-300/60 group-hover:shadow-[0_0_32px_rgba(56,189,248,0.7)]">
+            <div className="relative aspect-4/5 w-full max-w-xs overflow-hidden rounded-3xl border border-white/15 bg-black/30 shadow-[0_0_0_rgba(56,189,248,0)] backdrop-blur-md transition-all duration-500 sm:max-w-sm md:max-w-md group-hover:-translate-y-1 group-hover:border-sky-300/60 group-hover:shadow-[0_0_32px_rgba(56,189,248,0.7)] glow">
               <Image
                 src="/mo-1.png"
                 alt="Portrait of Mo Alaa"
@@ -76,23 +66,6 @@ export function HeroSection() {
                 priority
               />
             </div>
-          </div>
-        </div>
-
-        <div className="tag-belt text-xs text-neutral-300">
-          <div className="tag-belt-track">
-            {[...skills, ...skills].map((tag, index) => {
-              const Icon = SKILL_ICONS[tag];
-              return (
-                <span
-                  key={`${tag}-${index}`}
-                  className="flex items-center gap-1.5 rounded-full border border-white/10 bg-black/40 px-3 py-1 text-neutral-200"
-                >
-                  {Icon && <Icon className="size-3.5 shrink-0" />}
-                  {tag}
-                </span>
-              );
-            })}
           </div>
         </div>
       </div>

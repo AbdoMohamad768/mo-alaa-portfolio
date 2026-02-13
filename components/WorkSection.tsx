@@ -1,4 +1,5 @@
 import { AiOutlineBarChart, AiOutlinePieChart } from "react-icons/ai";
+import { FiExternalLink } from "react-icons/fi";
 import { LuFolderKanban } from "react-icons/lu";
 
 const workItems = [
@@ -6,6 +7,7 @@ const workItems = [
     type: "Business Intelligence",
     year: "Present",
     title: "Power BI dashboards & data modeling",
+    link: "",
     description:
       "Developing advanced skills in data modeling and visualization as a Microsoft Power BI Specialist Intern at Digital Egypt Pioneers Initiative—a competitive national program in data analytics.",
     metricLabelLeft: "Focus",
@@ -17,6 +19,7 @@ const workItems = [
     type: "Data Analytics",
     year: "2026",
     title: "Data cleaning, analysis & visualization",
+    link: "https://www.kaggle.com/code/moalaa14/campaign-performance-eda-insights",
     description:
       "Hands-on internship at Instant & Orange Digital Center. Worked with datasets for cleaning, analysis, and visualization using SQL, Python, and Power BI to support data-driven decision making.",
     metricLabelLeft: "Tools",
@@ -28,6 +31,7 @@ const workItems = [
     type: "Data Analytics",
     year: "2025",
     title: "Statistical analysis & reporting",
+    link: "",
     description:
       "Intensive training at NTI (National Telecommunication Institute). Learned Python, SQL, and Power BI. Applied statistical methods to generate business insights and build data visualizations.",
     metricLabelLeft: "Focus",
@@ -63,6 +67,20 @@ export function WorkSection() {
               key={item.title}
               className="fade-in-up rounded-2xl border border-white/10 bg-white/5 p-5 sm:p-6"
             >
+              {item.link && (
+                <a
+                  href={item.link}
+                  target="_blank"
+                  className="absolute top-4 right-4 text-[14px] flex items-center gap-1 py-1 px-2 rounded-2xl border-2 text-black hover:bg-gray-800 hover:text-emerald-300 
+            bg-neutral-50"
+                >
+                  <span className="text-xl">
+                    <FiExternalLink />
+                  </span>
+                  <span>Check it out</span>
+                </a>
+              )}
+
               <div className="flex flex-wrap items-center gap-3 text-xs text-neutral-400">
                 <span className="flex items-center gap-1.5 rounded-full border border-white/10 bg-black/40 px-3 py-1 text-[11px] uppercase tracking-[0.18em]">
                   {item.type === "Business Intelligence" ? (
