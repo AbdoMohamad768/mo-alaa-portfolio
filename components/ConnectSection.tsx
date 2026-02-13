@@ -12,7 +12,7 @@ import {
 } from "react-icons/lu";
 
 export function ConnectSection() {
-  const form = useRef();
+  const form = useRef<HTMLFormElement | null>(null);
   const [sending, setLoading] = useState(false);
 
   function sendEmail(e: { preventDefault: () => void }) {
@@ -38,16 +38,15 @@ export function ConnectSection() {
       },
     });
 
+    if (!form.current) return;
+
     emailjs
       .sendForm("service_y4fhs3g", "template_q8m1gse", form.current, {
         publicKey: "B5g9tR98IMVvknq-B",
       })
       .then(
         () => {
-          form.current["0"].value = "";
-          form.current["1"].value = "";
-          form.current["2"].value = "";
-
+          form.current?.reset();
           setLoading(false);
         },
         (error) => {

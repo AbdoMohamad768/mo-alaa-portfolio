@@ -1,24 +1,17 @@
 import Image from "next/image";
-import {
-  AiOutlineBarChart,
-  AiOutlineLineChart,
-  AiOutlinePieChart,
-} from "react-icons/ai";
-import { FaCode } from "react-icons/fa";
-import { LuDatabase, LuSearch, LuTrendingUp } from "react-icons/lu";
 
-const SKILL_ICONS: Record<
-  string,
-  React.ComponentType<{ className?: string }>
-> = {
-  "Data Analysis": AiOutlineBarChart,
-  Python: FaCode,
-  SQL: LuDatabase,
-  "Power BI": AiOutlinePieChart,
-  "Data Visualization": LuTrendingUp,
-  EDA: LuSearch,
-  "Business Intelligence": AiOutlineLineChart,
-};
+// const SKILL_ICONS: Record<
+//   string,
+//   React.ComponentType<{ className?: string }>
+// > = {
+//   "Data Analysis": AiOutlineBarChart,
+//   Python: FaCode,
+//   SQL: LuDatabase,
+//   "Power BI": AiOutlinePieChart,
+//   "Data Visualization": LuTrendingUp,
+//   EDA: LuSearch,
+//   "Business Intelligence": AiOutlineLineChart,
+// };
 
 export function HeroSection() {
   return (
